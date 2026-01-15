@@ -13,6 +13,8 @@ import Signup from './pages/Signup';
 import DemoPage from './pages/DemoPage';
 import Contact from './pages/Contact';
 import TermsPrivacy from './pages/TermsPrivacy';
+import Pricing from './pages/Pricing';
+import Success from './pages/Success';
 
 // Layout for the Client App (with Sidebar)
 const ClientLayout = () => {
@@ -36,6 +38,8 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms-privacy" element={<TermsPrivacy />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/success" element={<Success />} />
 
         {/* Demo Routes - using DemoPage as Layout */}
         <Route path="/demo" element={<DemoPage />}>
