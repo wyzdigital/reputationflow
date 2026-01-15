@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WYZReview - Reputation Management</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#1F2A2E',      // Charcoal Ink
+                teal: '#0E3A43',      // Deep Teal
+                steel: '#5E8F95',     // Steel Teal
+                offwhite: '#F7FAFA',  // Cloud White
+                orange: '#F47C5B',    // Signal Orange
+                white: '#ffffff',
+                
+                // Mapping specific shades for utility compatibility
+                50: '#F7FAFA',        // Cloud White
+                100: '#E0F2F1',       // Very Light Teal
+                500: '#F47C5B',       // Signal Orange (Primary Action)
+                600: '#0E3A43',       // Deep Teal (Brand Primary)
+                700: '#1F2A2E',       // Charcoal Ink (Text/Darkest)
+                900: '#0E3A43',       // Deep Teal
+              },
+              wyz: {
+                900: '#0E3A43',       // Deep Teal (Navbar, Footer, Hero BG)
+                800: '#1F2A2E',       // Charcoal Ink (Dark Text, Secondary Dark)
+                500: '#F47C5B',       // Signal Orange (Buttons, Highlights)
+                200: '#5E8F95',       // Steel Teal (Accents, Borders)
+                50: '#F7FAFA',        // Cloud White (Page Backgrounds)
+                100: '#E0F2F1',       // Light Accent
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-offwhite text-brand-dark">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
